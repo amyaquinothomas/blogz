@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class='head_page'>
+    <h1>Create a Blog</h1>
+</div>
+<div id="form-wrapper" style="max-width:750px;margin:auto;">
+    <form method='post'>
+        <label>
+            New Blog Post:
+            <input id="text" type="text" name='title' value='{{titleb}}' style='display:block;'/>
+            <textarea rows = "20" cols = "100" name ='body'>{{bodyb}}</textarea>
+        </label>
+        <input type="submit" value='Create Post' style='display:block;'/>
+    </form>
+</div>
+
+
+
+{% endblock %}
